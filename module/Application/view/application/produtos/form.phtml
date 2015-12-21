@@ -1,0 +1,32 @@
+<?php echo $this->form()->openTag($form)?>
+
+  <div class="form-group">    
+    <?php echo $this->formLabel($form->get('nome')); ?>    
+    <?php echo $this->formElement($form->get('nome')); ?>
+    <?php echo $this->formElementErrors($form->get('nome')); ?>
+  </div>
+  <div class="form-group">
+    <?php echo $this->formLabel($form->get('preco')); ?>    
+    <?php echo $this->formElement($form->get('preco')); ?>
+    <?php echo $this->formElementErrors($form->get('preco')); ?>
+  </div>
+  <div class="form-group">
+    <?php echo $this->formLabel($form->get('foto')); ?>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="form-group">
+    <?php echo $this->formLabel($form->get('descricao')); ?>    
+    <?php echo $this->formElement($form->get('descricao')); ?>
+    <?php echo $this->formElementErrors($form->get('descricao')); ?>
+  </div>
+  <div class="checkbox">
+    <label>
+      <?php echo $this->formElement($form->get('status')); ?>
+      <?php echo $this->formLabel($form->get('status')); ?>
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+
+<?php echo $this->form()->closeTag($form)?>
+
